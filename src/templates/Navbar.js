@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { Triangle, X, Menu } from "lucide-react"
+import { Triangle, X, Menu, ChevronLeft } from "lucide-react"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,7 +29,10 @@ export default function Navbar() {
         {location.pathname === "/home" ? (
           <Triangle className="ml-4 text-gray-500" size={24} />
         ) : (
-          <Triangle className="ml-4" size={24} />
+          <div className="flex">
+            <ChevronLeft className="ml-4" size={24} />
+            Back
+          </div>
         )}
       </div>
       <Menu className="absolute mr-4 right-3 mt-6" onClick={toggleMenu}>
