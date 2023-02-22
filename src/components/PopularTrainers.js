@@ -5,16 +5,20 @@ export default function PopularTrainers() {
   console.log(data)
   return (
     <>
-      <div className="gap-3 overflow-y-auto pb-3 pr-3">
+      <div className="Popular Trainers">
         {data &&
           data.map((item) => (
-            <div className="w-32 overflow-hidden cursor-pointer" key={item.id}>
+            <div className="flex w-32 cursor-pointer" key={item.id}>
               <img
-                className="h-24 w-24 object-cover rounded-xl shadow-sm"
+                className="h-24 w-[84px] object-cover rounded-xl shadow-sm ml-4 mb-4"
                 src={item.asset.url}
                 alt=""
               />
-              <h2>{item.trainer.trainerName}</h2>
+              <div className="flex flex-col w-20">
+                <h2 className="w-48 pl-4 pt-2 text-lg font-medium">
+                  {item.trainer.trainerName}
+                </h2>
+              </div>
             </div>
           ))}
       </div>

@@ -8,7 +8,7 @@ export default function Search() {
   return (
     <div className="Search">
       <div>
-        <h1 className="text-left text-[42px] mb-8 pt-10">Search</h1>
+        <h1 className="text-left text-[42px] mb-3 pt-14">Search</h1>
         <SearchField />
       </div>
       <div className="mt-8">
