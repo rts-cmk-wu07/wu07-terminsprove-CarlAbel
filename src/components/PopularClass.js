@@ -11,10 +11,9 @@ export default function PopularClass() {
 
   useEffect(() => {
     if (!data) return
-
     setSelectedData(data[Math.floor(Math.random() * data.length)])
   }, [data])
-  console.log(selectedData)
+
   return (
     <>
       {selectedData && (
