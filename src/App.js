@@ -18,7 +18,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/myschedule" element={<MySchedule />} />
-          {/* <Route path="/classDetails/:id" /> */}
+          <Route path="/classDetails/:id" />
         </Route>
       </Routes>
     </BrowserRouter>
