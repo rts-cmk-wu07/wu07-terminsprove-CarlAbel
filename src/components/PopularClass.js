@@ -18,7 +18,7 @@ export default function PopularClass() {
     <>
       {selectedData && (
         <div
-          onClick={() => navigate(`/classes/${selectedData?.id}`)}
+          onClick={() => navigate(`/classDetails/${selectedData?.id}`)}
           className="PopularClass relative"
         >
           <h2 className="absolute text-[28px] w-60 leading-10 text-white bottom-6 ml-5">

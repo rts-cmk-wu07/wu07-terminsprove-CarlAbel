@@ -43,20 +43,25 @@ export default function Navbar() {
           <div className="absolute top-0 right-0 m-4">
             <X className="mr-4 right-3 mt-6" onClick={toggleMenu}></X>
           </div>
-          <ul className="text-lg flex flex-col items-center justify-center h-full">
-            <li className="my-4">
+          <ul className="text-lg flex flex-col items-center mt-32 h-full">
+            <li className="my-6 text-[28px] ">
               <Link to="/home" onClick={handleMenuItemClick}>
                 Home
               </Link>
             </li>
-            <li className="my-4">
+            <li className="my-6 text-[28px]">
               <Link to="/search" onClick={handleMenuItemClick}>
                 Search
               </Link>
             </li>
-            <li className="my-4">
+            <li className="my-6 text-[28px]">
               <Link to="/myschedule" onClick={handleMenuItemClick}>
                 My Schedule
+              </Link>
+            </li>
+            <li className="my-6 text-[28px]">
+              <Link to="/" onClick={handleMenuItemClick}>
+                Log out
               </Link>
             </li>
           </ul>
