@@ -1,3 +1,9 @@
+import TrainerCard from "../components/TrainerCard"
+
 export default function ClassDetails() {
-  return <div>ClassDetails</div>
+  return (
+    <div>
+      <TrainerCard />
+    </div>
+  )
 }
