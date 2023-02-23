@@ -11,10 +11,11 @@ export default function Search() {
         <h1 className="text-left text-[42px] mb-3 pt-14">Search</h1>
         <SearchField />
       </div>
-      <div className="mt-8">
-        <h1 className="text-[28px] mb-4">Popular classes</h1>
+      <div className="mt-2">
+        <h1 className="text-[28px] mb-6">Popular classes</h1>
         <ClassesForYou />
       </div>
+
       <div className="">
         <h1 className="text-[28px] mb-4">Popular Trainers</h1>
         <PopularTrainers />

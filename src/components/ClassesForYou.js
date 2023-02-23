@@ -22,7 +22,7 @@ export default function ClassesForYou() {
         {data &&
           data.map((item) => (
             <div
-              onClick={() => navigate(`/class/${item.id}`)}
+              onClick={() => navigate(`/classDetails/${item.id}`)}
               className="w-32 overflow-hidden cursor-pointer"
               key={item.id}
             >
@@ -31,7 +31,7 @@ export default function ClassesForYou() {
                 src={item.asset.url}
                 alt=""
               />
-              <h2>{item.className}</h2>
+              <h2 className="truncate pr-4">{item.className}</h2>
             </div>
           ))}
       </Slider>

@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Layout from "./templates/Layout"
 import Search from "./pages/Search"
 import MySchedule from "./pages/MySchedule"
+import ClassDetails from "./pages/ClassDetails"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/myschedule" element={<MySchedule />} />
-          <Route path="/classDetails/:id" />
+          <Route path="/classDetails/:id" element={<ClassDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
