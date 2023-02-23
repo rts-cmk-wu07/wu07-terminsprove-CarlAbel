@@ -15,7 +15,7 @@ export default function ClassesForYou() {
     slidesToShow: 2.75, // Styling purposes.
     slidesToScroll: 1.8, // If more classes gets added, change this accordingly.
   }
-
+  console.log(data)
   return (
     <div className="pb-3">
       <Slider {...settings}>
