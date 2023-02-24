@@ -10,7 +10,7 @@ export default function TrainerCard() {
   }
 
   const { className, asset, trainer } = data
-  console.log(data)
+
   return (
     <div className="flex w-64 rounded-lg overflow-hidden">
       <img
