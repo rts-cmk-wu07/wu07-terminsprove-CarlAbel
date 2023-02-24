@@ -43,6 +43,26 @@ export default function ClassDetailsCard() {
           type="submit"
           value="Sign up"
         />
+        <div className="absolute bottom-8 ml-6">
+          {ratingsCount > 0 && <div className="flex"></div>}
+          {ratingsData?.map((rating) => (
+            <div key={rating.id}>
+              <div className="flex">
+                {[...Array(rating.rating)].map((_, index) => (
+                  <span
+                    key={index}
+                    className="h-2 w-2 text-red-400 bg-red-400 border-black text-lg mr-1 flex items-center justify-center"
+                    role="img"
+                    aria-label="box"
+                  >
+                    <span className="sr-only">Box</span>□
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
         <div className="p-4 absolute bottom-6">
           <h2 className="w-[17rem] leading-[2.6rem] text-4xl font-normal text-white  ">
             {className}
@@ -60,21 +80,6 @@ export default function ClassDetailsCard() {
         </div>
         <p className="text-black"></p>
         <p className="text-black m-4 leading-[1.4rem]">{classDescription}</p>
-        <div>
-          <h2>Ratings:</h2>
-          {ratingsCount > 0 && (
-            <p>
-              Average rating: {averageRating.toFixed(1)} ({ratingsCount}{" "}
-              {ratingsCount === 1 ? "rating" : "ratings"})
-            </p>
-          )}
-          {ratingsData?.map((rating) => (
-            <div key={rating.id}>
-              <p>{rating.comment}</p>
-              <p>{rating.rating} stars</p>
-            </div>
-          ))}
-        </div>
       </div>
     </>
   )
